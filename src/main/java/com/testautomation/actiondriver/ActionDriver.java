@@ -201,21 +201,7 @@ public class ActionDriver {
 			
 		}
 		
-		public void getWindowHandles1()
-		{
-			//main window
-			String mainWindow=driver.getWindowHandle();
-			Set<String> allwindows=driver.getWindowHandles();
-			for(String handle:allwindows)
-			{
-				if(!handle.equals(mainWindow))
-				{
-					driver.switchTo().window(handle);
-				}
-			}
-			System.out.println("new window title"+driver.getTitle());
-			
-		}
+		
 	
 	
 	
