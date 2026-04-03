@@ -7,9 +7,10 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="loginFunctionality"/>
+          <include name="loginFunctionality" invocation-numbers="0"/>
           <include name="setPages"/>
           <include name="loadConfig"/>
+          <include name="invalidLoginFunctionality" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.testautomation.test.LoginPageTest -->
     </classes>

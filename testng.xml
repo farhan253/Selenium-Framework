@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name ="Automation Suite">
+<suite name ="Automation Suite" parallel="classes" thread-count="2">
 <listeners>
 		<listener class-name="com.testautomation.listeners.TestListener"></listener>
 	</listeners>
