@@ -185,27 +185,36 @@ public class ActionDriver {
 			}
 		}
 		
-		public void getWindowHandles()
+		public void getWindowHandles(String windowTitle)
 		{
-			//main window
 			String mainWindow=driver.getWindowHandle();
 			Set<String> allwindows=driver.getWindowHandles();
 			for(String handle:allwindows)
 			{
-				if(!handle.equals(mainWindow))
+				driver.switchTo().window(handle);
+				if(driver.getTitle().equals(windowTitle))
 				{
-					driver.switchTo().window(handle);
+					logger.info("Switched to window: " + windowTitle);
+                    return;
 				}
-			}
-			System.out.println("new window title"+driver.getTitle());
+				
+				driver.switchTo().window(mainWindow);
 			
-		}
+			}
+			
+			
+			
+			
 		
-		
-	
-	
-	
-	
-	
 
+}
+		 // Method to dismiss an alert popup
+	    public void dismissAlert() {
+	        try {
+	            driver.switchTo().alert().dismiss();
+	            logger.info("Alert dismissed.");
+	        } catch (Exception e) {
+	            logger.error("No alert found to dismiss", e);
+	        }
+	    }
 }
