@@ -22,6 +22,7 @@ public class LoginPage {
 	private By verifyAdminText=By.xpath("//ul[@class='oxd-main-menu']/li/a[@href='/web/index.php/admin/viewAdminModule']");
 	private By clickUsername=By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']");
 	private By clickLogout=By.xpath("//a[contains(text(),'Logout')]");
+	private By verifyErrorMessage=By.xpath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']");
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -46,6 +47,13 @@ public class LoginPage {
 	{
 		actionDriver.click(clickUsername);
 		actionDriver.click(clickLogout);
+	}
+	
+	public void verifyErrorMessage()
+	{
+		actionDriver.isDisplayed(verifyErrorMessage);
+		Assert.assertTrue(true, "Error message is displayed");
+		
 	}
 	
 

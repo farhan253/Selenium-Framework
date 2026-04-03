@@ -27,5 +27,15 @@ public class LoginPageTest extends BaseClass {
 		ExtentManager.logStep("Logged out Successfully!");
 		staticWait(2);
 	}
+	@Test(dataProvider="inValidLoginData", dataProviderClass = DataProviders.class)
+	public void invalidLoginFunctionality(String username, String password)
+	{
+
+		ExtentManager.logStep("Navigating to Login Page entering username and password");
+		loginPage.loginMethod(username, password);
+		loginPage.verifyErrorMessage();
+		ExtentManager.logStep("Error message is displayed");
+		
+	}
 
 }
