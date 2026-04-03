@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-03T11:33:19 IST" name="Automation Suite" finished-at="2026-04-03T11:33:46 IST" duration-ms="26990">
+  <suite started-at="2026-04-03T13:45:34 IST" name="Default suite" finished-at="2026-04-03T13:45:48 IST" duration-ms="13133">
     <groups>
     </groups>
-    <test started-at="2026-04-03T11:33:19 IST" name="Automation test" finished-at="2026-04-03T11:33:46 IST" duration-ms="26990">
-      <class name="com.testautomation.test.LoginPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:19 IST" name="loadConfig" finished-at="2026-04-03T11:33:19 IST" duration-ms="12" status="PASS">
+    <test started-at="2026-04-03T13:45:34 IST" name="Default test" finished-at="2026-04-03T13:45:48 IST" duration-ms="13133">
+      <class name="com.testautomation.test.Window_Handles_In_OrangeHRM_Test">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.testautomation.test.Window_Handles_In_OrangeHRM_Test@19e4fcac]" started-at="2026-04-03T13:45:34 IST" name="loadConfig" finished-at="2026-04-03T13:45:34 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:20 IST" name="setup" finished-at="2026-04-03T11:33:27 IST" duration-ms="7860" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testautomation.test.Window_Handles_In_OrangeHRM_Test@19e4fcac]" started-at="2026-04-03T13:45:35 IST" name="setup" finished-at="2026-04-03T13:45:42 IST" duration-ms="7241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setPages()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:27 IST" name="setPages" finished-at="2026-04-03T11:33:27 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setPages()[pri:0, instance:com.testautomation.test.Window_Handles_In_OrangeHRM_Test@19e4fcac]" started-at="2026-04-03T13:45:42 IST" name="setPages" finished-at="2026-04-03T13:45:42 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPages -->
-        <test-method signature="invalidLoginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:27 IST" name="invalidLoginFunctionality" data-provider="InValidLoginData" finished-at="2026-04-03T11:33:30 IST" duration-ms="2503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adfg]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[fhhf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:30 IST" name="tearDown" finished-at="2026-04-03T11:33:31 IST" duration-ms="446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:31 IST" name="setup" finished-at="2026-04-03T11:33:38 IST" duration-ms="7152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setPages()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:38 IST" name="setPages" finished-at="2026-04-03T11:33:38 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setPages -->
-        <test-method signature="loginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:38 IST" name="loginFunctionality" data-provider="validLoginData" finished-at="2026-04-03T11:33:45 IST" duration-ms="7133" status="PASS">
+        <test-method signature="windowsTest(java.lang.String,java.lang.String)[pri:0, instance:com.testautomation.test.Window_Handles_In_OrangeHRM_Test@19e4fcac]" started-at="2026-04-03T13:45:42 IST" name="windowsTest" data-provider="validLoginData" finished-at="2026-04-03T13:45:47 IST" duration-ms="4917" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,12 +34,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testautomation.test.LoginPageTest@38aa816f]" started-at="2026-04-03T11:33:45 IST" name="tearDown" finished-at="2026-04-03T11:33:46 IST" duration-ms="491" status="PASS">
+        </test-method> <!-- windowsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testautomation.test.Window_Handles_In_OrangeHRM_Test@19e4fcac]" started-at="2026-04-03T13:45:47 IST" name="tearDown" finished-at="2026-04-03T13:45:48 IST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testautomation.test.LoginPageTest -->
-    </test> <!-- Automation test -->
-  </suite> <!-- Automation Suite -->
+      </class> <!-- com.testautomation.test.Window_Handles_In_OrangeHRM_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

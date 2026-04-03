@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testautomation.test.LoginPageTest">
+      <class name="com.testautomation.test.Window_Handles_In_OrangeHRM_Test">
         <methods>
           <include name="setup"/>
+          <include name="windowsTest"/>
           <include name="tearDown"/>
-          <include name="loginFunctionality" invocation-numbers="0"/>
           <include name="setPages"/>
           <include name="loadConfig"/>
-          <include name="invalidLoginFunctionality" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.testautomation.test.LoginPageTest -->
+      </class> <!-- com.testautomation.test.Window_Handles_In_OrangeHRM_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
