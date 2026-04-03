@@ -3,6 +3,7 @@ package com.testautomation.actiondriver;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -182,6 +183,22 @@ public class ActionDriver {
 				logger.error("Unable to compare text");
 				return false;
 			}
+		}
+		
+		public void getWindowHandles()
+		{
+			//main window
+			String mainWindow=driver.getWindowHandle();
+			Set<String> allwindows=driver.getWindowHandles();
+			for(String handle:allwindows)
+			{
+				if(!handle.equals(mainWindow))
+				{
+					driver.switchTo().window(handle);
+				}
+			}
+			System.out.println("new window title"+driver.getTitle());
+			
 		}
 	
 	
